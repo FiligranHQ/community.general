@@ -348,7 +348,7 @@ def main():
     msg['From'] = formataddr((sender_phrase, sender_addr))
     msg['Date'] = formatdate(localtime=True)
     msg['Subject'] = Header(subject, charset)
-    msg['Message-ID]'] = make_msgid()
+    msg['Message-ID'] = make_msgid()
     msg.preamble = "Multipart message"
 
     for header in headers:
